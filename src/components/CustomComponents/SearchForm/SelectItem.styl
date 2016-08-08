@@ -1,0 +1,36 @@
+@import "../../../theme/base"
+
+.hiddenList
+  display none
+
+.list_wrapper
+  position absolute
+  height 405px
+  min-width 344px
+  overflow-y auto
+  border-bottom-left-radius $radius
+  border-bottom-left-radius $radius
+  .list
+    background-color get-white()
+    color $accent-color
+    padding 0
+    margin 0
+    border 1px solid get-grey(100)
+    .selected
+      background-color $main-color
+      color get-white()
+    li
+      list-style none
+      padding 10px 20px
+      &:not(:last-child)
+        border-bottom 1px solid get-grey(100)
+      &:hover
+        background-color $main-color
+        color get-white()
+    a
+      color get-grey(100)
+      font-weight 400
+      text-decoration none
+      &:hover
+        color get-white()
+        text-decoration none

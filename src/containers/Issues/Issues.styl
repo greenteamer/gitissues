@@ -1,0 +1,32 @@
+@import "../../theme/base"
+
+.listIssues
+  background-color: $bg-color
+  li
+    margin-top 10px
+    .number
+      padding 8px
+      margin 4px
+      background-color $main-color
+  .issue
+    width 100%
+    border 1px solid get-grey(300)
+    display block
+    overflow hidden
+    margin 10px 0
+    .user_info
+      width 110px
+      float left
+      border-right 1px solid get-grey(300)
+      padding 10px
+      img
+        border-radius $radius
+        margin-right 10px
+      p
+        margin-top 2px
+        margin-bottom 2px
+    .issue_info
+      float left
+      display block
+      border-radius $radius
+      padding 10px

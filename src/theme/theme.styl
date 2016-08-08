@@ -1,0 +1,52 @@
+@import "base"
+@import "font"
+
+$font-family = 'Fira Sans', arial
+
+:global
+  body
+    font-family: $font-family
+    font-size: $font-size
+    line-height: $line-height
+    color: $text-color
+    background-color: $bg-color
+    margin: 0
+  a
+    color: $link-color
+    text-decoration: none
+    &:hover
+      color: $link-hover-color
+      text-decoration: none
+  hr
+    border: 0
+    border-bottom: 1px solid $weak-color
+  h1,
+  h2
+    margin-bottom: 20px
+  h3,
+  h4,
+  h5,
+  h6
+    font-size: 16px
+    margin-bottom: 20px
+  pre
+    background-color: get-grey(100)
+    padding: 10px 15px
+    border-radius: 4px
+  button
+    background-color: $main-color
+    color get-white()
+    padding 0 20px
+    margin 5px
+    text-align center
+    font-size 16px
+    height 40px
+    border-width 1px
+    border-color get-cyan(600)
+    border-radius $radius
+  input
+    padding 10px
+    border 1px solid $border-color
+    border-radius 3px
+    font-size 16px
+    min-width 320px

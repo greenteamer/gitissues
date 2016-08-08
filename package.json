@@ -1,0 +1,78 @@
+{
+  "name": "gitissues",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "dev": "gulp serve",
+    "build": "gulp build",
+    "deploy": "gulp deploy",
+    "lint": "gulp lint",
+    "test": "mocha \"src/**/tests/*.js\" --compilers js:babel-register",
+    "test:watch": "npm run test -- --reporter min --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlejoFernandez/react-stylus-webpack-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "stylus",
+    "git",
+    "issues"
+  ],
+  "author": "Aleksandr Korovkin",
+  "homepage": "https://github.com/greenteamer/gitissues",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
+    "babel-core": "^6.7.6",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "babel-register": "^6.7.2",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.0",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.1.0",
+    "eslint-plugin-react": "^4.0.0",
+    "estraverse": "^4.2.0",
+    "estraverse-fb": "^1.3.1",
+    "expect": "^1.20.2",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-mocha": "^2.2.0",
+    "html-loader": "^0.4.0",
+    "html-webpack-plugin": "^1.7.0",
+    "html-webpack-template": "^5.0.0",
+    "jade-react-loader": "^1.0.2",
+    "markdown-loader": "^0.1.7",
+    "mocha": "^2.5.3",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.1.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "domready": "^1.0.8",
+    "history": "^2.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "redbox-react": "^1.2.3",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
+    "underscore": "^1.8.3"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
+}
